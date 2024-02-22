@@ -10,6 +10,21 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  firstName: {
+    type: String,
+    required: false,
+    default: "",
+  },
+  lastName: {
+    type: String,
+    required: false,
+    default: "",
+  },
+  address: {
+    type: String,
+    required: false,
+    default: "",
+  },
   userRole: {
     type: String,
     enum: ["seller", "user"],
